@@ -8,7 +8,7 @@
     <!-- Tailwind CSS -->
     <link href="output.css" rel="stylesheet">
 
-    <!-- Google Fonts: Plus Jakarta Sans (Modern Sans-Serif) -->
+    <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        /* FONT UTAMA DIUBAH DI SINI */
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
@@ -31,16 +30,31 @@
 </head>
 <body class="bg-slate-900 text-gray-300 font-sans">
 
-    <!-- HEADER -->
+    <!-- HEADER (TELAH DIMODIFIKASI) -->
     <header class="bg-slate-900/80 backdrop-blur-lg shadow-lg fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto flex justify-between items-center p-4 px-6">
-            <a href="#" class="text-2xl font-bold text-white tracking-wider">Funky<span class="text-teal-400">Fiesta</span>Finds</a>
-            <nav class="hidden md:flex space-x-4">
-                <a href="#tentang" class="text-gray-300 hover:text-teal-400 font-medium transition-colors duration-300">Tentang Kami</a>
-                <a href="#harga" class="text-gray-300 hover:text-teal-400 font-medium transition-colors duration-300">Armada</a>
-                <a href="#testimoni" class="text-gray-300 hover:text-teal-400 font-medium transition-colors duration-300">Testimoni</a>
-                <a href="#lokasi" class="text-gray-300 hover:text-teal-400 font-medium transition-colors duration-300">Lokasi</a>
-            </nav>
+            <!-- LOGO SVG BARU (MENGGANTIKAN TEKS) -->
+            <a href="#" class="text-white">
+                <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12.375L6.5 10.125M19 12.375L17.5 10.125M7 17.625H5.5C5.075 17.625 4.7175 17.34 4.625 16.9275L3.125 10.4275C3.04 10.0425 3.3425 9.625 3.7325 9.625H20.2675C20.6575 9.625 20.96 10.0425 20.875 10.4275L19.375 16.9275C19.2825 17.34 18.925 17.625 18.5 17.625H17M7 17.625V15.5M17 17.625V15.5M7 17.625H17M7 15.5H17M7 15.5L6.5 10.125M17 15.5L17.5 10.125M6.5 10.125H17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 6.875C7.5 7.9125 6.6625 8.75 5.625 8.75C4.5875 8.75 3.75 7.9125 3.75 6.875C3.75 5.8375 4.5875 5 5.625 5C6.6625 5 7.5 5.8375 7.5 6.875Z" stroke="#2dd4bf" stroke-width="1.5"/>
+                    <path d="M20.25 6.875C20.25 7.9125 19.4125 8.75 18.375 8.75C17.3375 8.75 16.5 7.9125 16.5 6.875C16.5 5.8375 17.3375 5 18.375 5C19.4125 5 20.25 5.8375 20.25 6.875Z" stroke="#2dd4bf" stroke-width="1.5"/>
+                </svg>
+            </a>
+            <div class="flex items-center gap-4">
+                <nav class="hidden md:flex space-x-4">
+                    <a href="#tentang" class="text-gray-300 hover:text-teal-400 font-medium transition-colors duration-300">Tentang Kami</a>
+                    <a href="#harga" class="text-gray-300 hover:text-teal-400 font-medium transition-colors duration-300">Armada</a>
+                    <a href="#testimoni" class="text-gray-300 hover:text-teal-400 font-medium transition-colors duration-300">Testimoni</a>
+                    <a href="#lokasi" class="text-gray-300 hover:text-teal-400 font-medium transition-colors duration-300">Lokasi</a>
+                </nav>
+                <!-- TOMBOL ICON DOLLAR BARU -->
+                <a href="#harga" class="w-10 h-10 flex items-center justify-center bg-slate-700/50 hover:bg-teal-500 rounded-full text-white transition-colors duration-300" title="Lihat Harga">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 11.21 12.77 11 12 11c-.77 0-1.536.21-2.121.621L9 12.232z" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -64,7 +78,7 @@
             </div>
         </section>
 
-        <!-- BAGIAN TENTANG KAMI (ASIMETRIS) -->
+        <!-- BAGIAN TENTANG KAMI -->
         <section id="tentang" class="py-16 md:py-24 bg-slate-900">
             <div class="container mx-auto px-6">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -75,7 +89,6 @@
                     <div data-aos="fade-left" data-aos-delay="200">
                         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Lebih dari Sekedar Sewa Mobil</h2>
                         <p class="text-teal-400 font-semibold mb-6">Kami adalah partner perjalanan Anda.</p>
-                        <!-- KELAS FONT LAMA DIHAPUS DARI SINI -->
                         <p class="text-lg leading-relaxed text-gray-400 mb-4">Di FunkyFiestaFinds, kami percaya bahwa perjalanan haruslah mudah, nyaman, dan berkesan. Berdiri sejak 2020, kami berkomitmen untuk menyediakan armada mobil terbaik dengan standar pelayanan tertinggi.</p>
                         <p class="text-lg leading-relaxed text-gray-400">Setiap kendaraan kami terawat secara rutin dan dilengkapi dengan asuransi untuk menjamin keamanan dan ketenangan Anda di jalan.</p>
                     </div>
@@ -121,7 +134,7 @@
 
                     <!-- Card 3: Premium SUV -->
                     <div class="bg-slate-800 rounded-xl shadow-lg p-8 text-left flex flex-col border border-slate-700 hover:border-teal-500 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
-                        <img src="https://images.unsplash.com/photo-1605559424843-9e-4c228bf1c2?q=80&w=1964&auto=format&fit=crop" alt="Premium SUV" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1964&auto=format&fit=crop" alt="Premium SUV" class="rounded-lg mb-6 h-48 w-full object-cover">
                         <h3 class="text-2xl font-bold mb-4 text-white">Premium SUV</h3>
                         <p class="text-4xl font-bold mb-6 text-teal-400">Rp 800K<span class="text-lg font-normal text-gray-500">/hari</span></p>
                         <ul class="space-y-4 mb-8 flex-grow text-gray-400">
@@ -141,38 +154,17 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-white" data-aos="fade-up">Dipercaya Ribuan Pelanggan</h2>
                 <p class="text-gray-400 mb-12 md:mb-16 max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-delay="100">Kepuasan Anda adalah bukti kualitas kami.</p>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Testimoni 1 -->
                     <div class="bg-slate-800 p-8 rounded-xl border border-slate-700" data-aos="fade-up" data-aos-delay="200">
                         <p class="text-gray-300 mb-6 italic">"Pelayanan terbaik yang pernah saya dapatkan. Mobilnya bersih, wangi, dan performanya sempurna. Proses booking sangat cepat. Highly recommended!"</p>
-                        <div class="flex items-center">
-                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar">
-                            <div>
-                                <p class="font-bold text-white">Budi Santoso</p>
-                                <p class="text-sm text-teal-400">Wisatawan, Jakarta</p>
-                            </div>
-                        </div>
+                        <div class="flex items-center"><img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar"><div><p class="font-bold text-white">Budi Santoso</p><p class="text-sm text-teal-400">Wisatawan, Jakarta</p></div></div>
                     </div>
-                     <!-- Testimoni 2 -->
                     <div class="bg-slate-800 p-8 rounded-xl border border-slate-700" data-aos="fade-up" data-aos-delay="300">
                         <p class="text-gray-300 mb-6 italic">"Harga sangat kompetitif untuk kualitas mobil yang premium. Sudah termasuk asuransi jadi perjalanan lebih tenang. Pasti jadi langganan."</p>
-                        <div class="flex items-center">
-                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar">
-                            <div>
-                                <p class="font-bold text-white">Citra Lestari</p>
-                                <p class="text-sm text-teal-400">Pekerja Dinas, Surabaya</p>
-                            </div>
-                        </div>
+                        <div class="flex items-center"><img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar"><div><p class="font-bold text-white">Citra Lestari</p><p class="text-sm text-teal-400">Pekerja Dinas, Surabaya</p></div></div>
                     </div>
-                     <!-- Testimoni 3 -->
                     <div class="bg-slate-800 p-8 rounded-xl border border-slate-700" data-aos="fade-up" data-aos-delay="400">
                         <p class="text-gray-300 mb-6 italic">"Sewa SUV untuk acara penting, dan mobilnya benar-benar membuat kesan. Mewah, nyaman, dan bersih. Tim FunkyFiestaFinds sangat profesional."</p>
-                        <div class="flex items-center">
-                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/men/46.jpg" alt="Avatar">
-                            <div>
-                                <p class="font-bold text-white">Agus Wijaya</p>
-                                <p class="text-sm text-teal-400">Pengusaha</p>
-                            </div>
-                        </div>
+                        <div class="flex items-center"><img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/men/46.jpg" alt="Avatar"><div><p class="font-bold text-white">Agus Wijaya</p><p class="text-sm text-teal-400">Pengusaha</p></div></div>
                     </div>
                 </div>
             </div>
@@ -190,22 +182,17 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER (TELAH DIMODIFIKASI) -->
     <footer class="bg-slate-900 border-t border-slate-800 pt-16 pb-8">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8 mb-8 text-center md:text-left">
-                <div>
+            <!-- LAYOUT GRID DIUBAH DI SINI -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8 text-left">
+                <!-- Kolom 1: Logo (dibuat lebih besar) -->
+                <div class="sm:col-span-2 md:col-span-1">
                     <h3 class="text-xl font-bold text-white mb-4">Funky<span class="text-teal-400">Fiesta</span>Finds</h3>
-                    <p class="text-gray-400">Partner terpercaya untuk setiap perjalanan Anda.</p>
+                    <p class="text-gray-400 pr-8">Partner terpercaya untuk setiap perjalanan Anda, memberikan kualitas dan layanan premium.</p>
                 </div>
-                <div>
-                    <h3 class="font-semibold text-white mb-4">Navigasi</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#tentang" class="text-gray-400 hover:text-teal-400">Tentang Kami</a></li>
-                        <li><a href="#harga" class="text-gray-400 hover:text-teal-400">Armada</a></li>
-                        <li><a href="#testimoni" class="text-gray-400 hover:text-teal-400">Testimoni</a></li>
-                    </ul>
-                </div>
+                <!-- Kolom 2: Layanan -->
                  <div>
                     <h3 class="font-semibold text-white mb-4">Layanan</h3>
                     <ul class="space-y-2 text-gray-400">
@@ -214,6 +201,7 @@
                         <li>Antar-Jemput Bandara</li>
                     </ul>
                 </div>
+                <!-- Kolom 3: Hubungi Kami -->
                  <div>
                     <h3 class="font-semibold text-white mb-4">Hubungi Kami</h3>
                     <ul class="space-y-2 text-gray-400">
@@ -222,6 +210,7 @@
                         <li>Lokasi: Monas, Jakarta Pusat</li>
                     </ul>
                 </div>
+                <!-- KOLOM NAVIGASI TELAH DIHAPUS -->
             </div>
             <div class="border-t border-slate-800 pt-8 text-center text-gray-500">
                 <p>&copy; 2025 FunkyFiestaFinds. All Rights Reserved.</p>
