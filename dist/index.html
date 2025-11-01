@@ -8,17 +8,18 @@
     <!-- Tailwind CSS -->
     <link href="output.css" rel="stylesheet">
 
-    <!-- Google Fonts: Poppins -->
+    <!-- Google Fonts: Plus Jakarta Sans (Modern Sans-Serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- AOS (Animate On Scroll) Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
+        /* FONT UTAMA DIUBAH DI SINI */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
         .text-glow {
             text-shadow: 0 0 8px rgba(80, 200, 180, 0.4);
@@ -45,7 +46,7 @@
 
     <main>
         
-        <!-- HERO SECTION (TELAH DIPERBAIKI) -->
+        <!-- HERO SECTION -->
         <section id="hero" class="relative min-h-[70vh] md:min-h-screen flex items-center justify-center text-white text-center px-4 pt-20">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>
             <img src="https://images.unsplash.com/photo-1758448721161-7b3df5ec04b3?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="Mobil di jalan">
@@ -74,8 +75,9 @@
                     <div data-aos="fade-left" data-aos-delay="200">
                         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Lebih dari Sekedar Sewa Mobil</h2>
                         <p class="text-teal-400 font-semibold mb-6">Kami adalah partner perjalanan Anda.</p>
-                        <p class="text-gray-400 mb-4">Di FunkyFiestaFinds, kami percaya bahwa perjalanan haruslah mudah, nyaman, dan berkesan. Berdiri sejak 2020, kami berkomitmen untuk menyediakan armada mobil terbaik dengan standar pelayanan tertinggi.</p>
-                        <p class="text-gray-400">Setiap kendaraan kami terawat secara rutin dan dilengkapi dengan asuransi untuk menjamin keamanan dan ketenangan Anda di jalan.</p>
+                        <!-- KELAS FONT LAMA DIHAPUS DARI SINI -->
+                        <p class="text-lg leading-relaxed text-gray-400 mb-4">Di FunkyFiestaFinds, kami percaya bahwa perjalanan haruslah mudah, nyaman, dan berkesan. Berdiri sejak 2020, kami berkomitmen untuk menyediakan armada mobil terbaik dengan standar pelayanan tertinggi.</p>
+                        <p class="text-lg leading-relaxed text-gray-400">Setiap kendaraan kami terawat secara rutin dan dilengkapi dengan asuransi untuk menjamin keamanan dan ketenangan Anda di jalan.</p>
                     </div>
                 </div>
             </div>
@@ -93,10 +95,10 @@
                         <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1974&auto=format&fit=crop" alt="City Car" class="rounded-lg mb-6 h-48 w-full object-cover">
                         <h3 class="text-2xl font-bold mb-4 text-white">City Car</h3>
                         <p class="text-4xl font-bold mb-6 text-teal-400">Rp 350K<span class="text-lg font-normal text-gray-500">/hari</span></p>
-                        <ul class="space-y-3 mb-8 flex-grow text-gray-400">
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Kapasitas 4 orang</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Transmisi Otomatis</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Asuransi All-Risk</li>
+                        <ul class="space-y-4 mb-8 flex-grow text-gray-400">
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Kapasitas 4 orang</li>
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Transmisi Otomatis</li>
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Asuransi All-Risk</li>
                         </ul>
                         <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20menyewa%20City%20Car." target="_blank" class="w-full bg-slate-700 text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-teal-500 transition-colors duration-300">Sewa Sekarang</a>
                     </div>
@@ -109,23 +111,23 @@
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-white">Family MPV</h3>
                         <p class="text-4xl font-bold mb-6 text-teal-400">Rp 500K<span class="text-lg font-normal text-gray-400">/hari</span></p>
-                        <ul class="space-y-3 mb-8 flex-grow">
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Kapasitas 7 orang</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Kabin & Bagasi Luas</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Asuransi All-Risk</li>
+                        <ul class="space-y-4 mb-8 flex-grow">
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Kapasitas 7 orang</li>
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Kabin & Bagasi Luas</li>
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Asuransi All-Risk</li>
                         </ul>
                         <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20menyewa%20Family%20MPV." target="_blank" class="w-full bg-teal-500 text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-teal-600 transition-colors duration-300 shadow-lg shadow-teal-500/30">Sewa Sekarang</a>
                     </div>
 
                     <!-- Card 3: Premium SUV -->
                     <div class="bg-slate-800 rounded-xl shadow-lg p-8 text-left flex flex-col border border-slate-700 hover:border-teal-500 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
-                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1964&auto=format&fit=crop" alt="Premium SUV" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e-4c228bf1c2?q=80&w=1964&auto=format&fit=crop" alt="Premium SUV" class="rounded-lg mb-6 h-48 w-full object-cover">
                         <h3 class="text-2xl font-bold mb-4 text-white">Premium SUV</h3>
                         <p class="text-4xl font-bold mb-6 text-teal-400">Rp 800K<span class="text-lg font-normal text-gray-500">/hari</span></p>
-                        <ul class="space-y-3 mb-8 flex-grow text-gray-400">
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Kapasitas 7 orang</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Mewah & Bertenaga</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Asuransi All-Risk</li>
+                        <ul class="space-y-4 mb-8 flex-grow text-gray-400">
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Kapasitas 7 orang</li>
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Mewah & Bertenaga</li>
+                            <li class="flex items-center"><span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mr-3 bg-teal-500 rounded-full shadow-lg shadow-teal-500/20"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>Asuransi All-Risk</li>
                         </ul>
                         <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20menyewa%20Premium%20SUV." target="_blank" class="w-full bg-slate-700 text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-teal-500 transition-colors duration-300">Sewa Sekarang</a>
                     </div>
