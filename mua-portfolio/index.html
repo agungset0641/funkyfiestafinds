@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glow & Grace Artistry - Makeup Artist Profesional</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-serif-display {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-rose-50 text-stone-700">
+    
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto flex justify-between items-center p-4 px-6">
+            <a href="#" class="font-serif-display text-2xl font-bold text-stone-800">Glow<span class="text-rose-500">&</span>Grace</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#layanan" class="text-stone-600 hover:text-rose-500 font-medium transition-colors duration-300">Layanan</a>
+                <a href="#portfolio" class="text-stone-600 hover:text-rose-500 font-medium transition-colors duration-300">Portfolio</a>
+                <a href="#testimoni" class="text-stone-600 hover:text-rose-500 font-medium transition-colors duration-300">Testimoni</a>
+                <a href="#kontak" class="text-stone-600 hover:text-rose-500 font-medium transition-colors duration-300">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-24 md:pt-20">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 min-h-[90vh] items-center">
+                    <div class="text-center md:text-left px-6" data-aos="fade-right">
+                        <h1 class="font-serif-display text-5xl lg:text-7xl font-bold mb-4 text-stone-900 leading-tight">
+                            Kecantikan Abadi, <br /> Sentuhan Pribadi.
+                        </h1>
+                        <p class="text-lg max-w-md mx-auto md:mx-0 mb-8 text-stone-600">
+                            Menampilkan versi terbaik dari diri Anda di setiap momen istimewa melalui seni rias profesional.
+                        </p>
+                        <a href="#portfolio" class="bg-rose-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-rose-600 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-rose-500/30">
+                            Lihat Portfolio
+                        </a>
+                    </div>
+                    <div class="h-80 md:h-full w-full mt-8 md:mt-0" data-aos="fade-left">
+                        <!-- Ganti dengan foto model/makeup terbaik Anda -->
+                        <img src="https://images.unsplash.com/photo-1596704017254-9b1210a83a2a?q=80&w=1887&auto=format&fit=crop" class="h-full w-full object-cover rounded-l-lg shadow-2xl" alt="Model dengan riasan makeup elegan" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="layanan" class="py-16 md:py-24">
+            <div class="container mx-auto px-6 space-y-24">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="font-serif-display text-4xl md:text-5xl font-bold text-stone-900">Layanan Rias Profesional</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-stone-600">Disesuaikan untuk setiap kebutuhan dan acara, memastikan Anda tampil memukau.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                    <!-- Ganti dengan foto riasan pengantin -->
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-xl" alt="Rias Pengantin" />
+                    <div>
+                        <h3 class="font-serif-display text-3xl font-bold text-rose-500">Rias Pengantin (Bridal)</h3>
+                        <p class="mt-4 text-stone-600 leading-relaxed">Paket lengkap untuk hari pernikahan Anda, mulai dari konsultasi, rias akad/pemberkatan, hingga resepsi. Kami ciptakan tampilan impian yang tahan lama dan sempurna di foto.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                    <!-- Ganti dengan foto riasan pesta/wisuda -->
+                    <img src="https://images.unsplash.com/photo-1620921095318-93b5893a335a?q=80&w=1887&auto=format&fit=crop" class="rounded-lg shadow-xl md:order-last" alt="Rias Acara Spesial" />
+                    <div>
+                        <h3 class="font-serif-display text-3xl font-bold text-rose-500">Acara Spesial & Wisuda</h3>
+                        <p class="mt-4 text-stone-600 leading-relaxed">Tampil glamor dan percaya diri untuk acara pesta, lamaran, wisuda, atau momen penting lainnya. Riasan akan disesuaikan dengan tema acara dan busana Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio/Gallery Section -->
+        <section id="portfolio" class="py-16 md:py-24 bg-rose-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-serif-display text-4xl md:text-5xl font-bold mb-4 text-stone-900" data-aos="fade-up">Karya Terbaik Kami</h2>
+                <p class="text-stone-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Setiap wajah adalah kanvas, dan ini adalah beberapa mahakarya yang telah kami ciptakan.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Ganti semua gambar dengan foto portfolio Anda -->
+                    <img src="https://images.unsplash.com/photo-1616014324732-470b332305e5?q=80&w=1887&auto=format&fit=crop" class="col-span-2 row-span-2 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer object-cover" alt="Portfolio makeup utama" />
+                    <img src="https://images.unsplash.com/photo-1615212814841-f8a48b940422?q=80&w=1887&auto=format&fit=crop" class="rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer object-cover aspect-square" alt="Portfolio makeup thumbnail 1" />
+                    <img src="https://images.unsplash.com/photo-1607968541812-73a78edf3212?q=80&w=1887&auto=format&fit=crop" class="rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer object-cover aspect-square" alt="Portfolio makeup thumbnail 2" />
+                    <img src="https://images.unsplash.com/photo-1599331139433-f11a87a1d102?q=80&w=1887&auto=format&fit=crop" class="rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer object-cover aspect-square" alt="Portfolio makeup thumbnail 3" />
+                    <img src="https://images.unsplash.com/photo-1615875382839-829239845115?q=80&w=1887&auto=format&fit=crop" class="rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer object-cover aspect-square" alt="Portfolio makeup thumbnail 4" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimoni" class="py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+                <p class="font-serif-display text-3xl md:text-4xl italic text-stone-800 leading-relaxed max-w-4xl mx-auto">
+                    "Hasil makeup-nya luar biasa, flawless dan tahan seharian penuh! Benar-benar membuat hari pernikahanku sempurna. Sangat profesional dan ramah."
+                </p>
+                <p class="mt-8 font-bold text-rose-500 text-lg">
+                    — Anindya Putri, Pengantin
+                </p>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="kontak" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                     <h2 class="font-serif-display text-4xl md:text-5xl font-bold text-stone-900">Jadwalkan Sesi Anda</h2>
+                     <p class="mt-4 max-w-2xl mx-auto text-lg text-stone-600">
+                        Siap untuk tampil memukau? Hubungi saya untuk konsultasi gratis dan booking jadwal Anda.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-96 w-full rounded-lg shadow-xl overflow-hidden">
+                        <!-- Ganti dengan foto Anda atau studio Anda -->
+                        <img src="https://images.unsplash.com/photo-1556228852-6d45a7ae2659?q=80&w=1887&auto=format&fit=crop" class="h-full w-full object-cover" alt="Makeup artist working">
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="font-bold text-rose-500 text-xl">EMAIL</h3>
+                            <p class="text-stone-600 text-lg mt-1">kontak@glowandgrace.id</p>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-rose-500 text-xl">WHATSAPP</h3>
+                            <p class="text-stone-600 text-lg mt-1">0812-3456-7890</p>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-rose-500 text-xl">INSTAGRAM</h3>
+                            <p class="text-stone-600 text-lg mt-1 hover:underline"><a href="#">@glowandgrace_mua</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-200 pt-16 pb-8 bg-rose-50">
+        <div class="container mx-auto px-6 text-center">
+             <a href="#" class="font-serif-display text-2xl font-bold text-stone-800">Glow<span class="text-rose-500">&</span>Grace</a>
+             <p class="text-stone-600 mt-4 mb-8 max-w-md mx-auto">Seni merias untuk momen tak terlupakan Anda.</p>
+            <div class="border-t border-stone-200 pt-8 text-stone-500">
+                <p>&copy; 2025 Glow & Grace Artistry. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20jasa%20makeup%20Anda." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl hover:bg-green-600 transition-all duration-300 transform hover:scale-110 z-50">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
+    </a>
+
+    <!-- AOS (Animate On Scroll) Initializer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Durasi animasi
+            once: true,    // Animasi hanya berjalan sekali
+        });
+    </script>
+</body>
+</html>
