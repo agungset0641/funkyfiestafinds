@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panti Asuhan Lentera Harapan - Rumah Penuh Cinta & Asa</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Merriweather for headings, Nunito Sans for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #fdfdfd;
+        }
+        .font-serif-display {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+    
+    <!-- Header -->
+    <!-- GANTI KODE HEADER LAMA ANDA DENGAN YANG INI -->
+<header class="bg-white/80 backdrop-blur-lg shadow-sm fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4 px-6">
+        <!-- Logo -->
+        <a href="#" class="font-serif-display text-xl font-black text-gray-800">
+            Lentera<span class="text-sky-600">Harapan</span>
+        </a>
+
+        <!-- Navigasi & Tombol Donasi (HANYA TAMPIL DI DESKTOP) -->
+        <nav class="hidden md:flex items-center space-x-6">
+            <a href="#tentang" class="text-gray-600 hover:text-sky-600 font-semibold transition-colors duration-300">Tentang Kami</a>
+            <a href="#program" class="text-gray-600 hover:text-sky-600 font-semibold transition-colors duration-300">Program</a>
+            <a href="#galeri" class="text-gray-600 hover:text-sky-600 font-semibold transition-colors duration-300">Galeri</a>
+            <a href="#kontak" class="text-gray-600 hover:text-sky-600 font-semibold transition-colors duration-300">Kontak</a>
+            <a href="#donasi" class="bg-sky-500 text-white font-bold py-2 px-5 rounded-full hover:bg-sky-600 transition-all duration-300 shadow-md shadow-sky-500/30">
+                Donasi Sekarang
+            </a>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center text-center text-white px-4">
+            <!-- Background Image - Gambar anak-anak yang ceria -->
+            <img src="images/hero-image.png" class="absolute inset-0 w-full h-full object-cover" alt="Anak-anak panti asuhan tersenyum bahagia" />
+            <!-- Overlay Gelap -->
+            <div class="absolute inset-0 bg-black/60"></div>
+            
+            <div class="relative z-10" data-aos="fade-up">
+                <h1 class="font-serif-display text-5xl md:text-7xl font-black leading-tight">
+                    Menyalakan Asa,<br/>Membangun Masa Depan
+                </h1>
+                <p class="text-lg max-w-2xl mx-auto mt-6 text-gray-200">
+                    Memberikan rumah yang aman, pendidikan yang layak, dan kasih sayang tanpa batas untuk setiap anak titipan Tuhan.
+                </p>
+                <a href="#donasi" class="mt-10 inline-block bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-yellow-500/20">
+                    Beri Dukungan Anda
+                </a>
+            </div>
+        </section>
+
+        <!-- Tentang Kami Section -->
+        <section id="tentang" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <img src="images/cerita-kami.png" class="rounded-lg shadow-xl" alt="Kegiatan belajar di panti asuhan">
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="100">
+                        <h2 class="font-serif-display text-4xl md:text-5xl font-bold text-gray-900 mb-6">Cerita Kami</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            Panti Asuhan Lentera Harapan berdiri sejak tahun 2010 sebagai rumah yang penuh kehangatan bagi anak-anak yang membutuhkan. Visi kami adalah memastikan setiap anak mendapatkan haknya untuk tumbuh kembang secara optimal dalam lingkungan yang positif dan mendukung.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Kami percaya, dengan pendidikan yang baik, gizi seimbang, dan bimbingan moral, mereka dapat meraih cita-cita dan menjadi generasi penerus bangsa yang tangguh dan berakhlak mulia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Unggulan Section -->
+        <section id="program" class="py-20 md:py-28 bg-sky-50/70">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-serif-display text-4xl md:text-5xl font-bold text-gray-900" data-aos="fade-up">Program Unggulan Kami</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">Fokus kami untuk menciptakan masa depan yang lebih cerah.</p>
+                <div class="grid md:grid-cols-3 gap-10 mt-16">
+                    <!-- Program 1: Pendidikan -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/pendidikan.png" alt="Anak-anak belajar dengan gembira" class="mx-auto w-40 h-40 mb-5 rounded-full object-cover shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800">Pendidikan Layak</h3>
+                        <p class="mt-2 text-gray-600">Menyediakan akses pendidikan formal, bimbingan belajar, dan kelas keterampilan.</p>
+                    </div>
+                    <!-- Program 2: Kesehatan -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                         <img src="images/kesehatan.png" alt="Anak-anak belajar dengan gembira" class="mx-auto w-40 h-40 mb-5 rounded-full object-cover shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800">Kesehatan & Gizi</h3>
+                        <p class="mt-2 text-gray-600">Memastikan asupan gizi seimbang dan pemeriksaan kesehatan rutin untuk semua anak.</p>
+                    </div>
+                    <!-- Program 3: Pengembangan Karakter -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                         <img src="images/karakter.png" alt="Anak-anak belajar dengan gembira" class="mx-auto w-40 h-40 mb-5 rounded-full object-cover shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800">Bina Karakter</h3>
+                        <p class="mt-2 text-gray-600">Mengadakan kegiatan keagamaan dan rekreasi untuk membentuk pribadi yang ceria dan berakhlak.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donasi Section -->
+        <section id="donasi" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                     <h2 class="font-serif-display text-4xl md:text-5xl font-bold text-gray-900">Uluran Tangan Anda, Harapan Mereka</h2>
+                     <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
+                        Setiap donasi, berapapun nilainya, sangat berarti bagi kami untuk terus memberikan yang terbaik bagi anak-anak. Mari bersama menjadi bagian dari perubahan hidup mereka.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white p-8 rounded-lg shadow-2xl border text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Donasi Cepat via QRIS</h3>
+                        <p class="text-gray-600 mb-6">Scan kode QR di bawah ini menggunakan aplikasi E-Wallet (GoPay, OVO, Dana, dll) atau Mobile Banking Anda.</p>
+                        <!-- Ganti src dengan link gambar QRIS Anda yang sebenarnya -->
+                        <img src="https://api.qr-code-generator.com/v1/create?access-token=f-M6z6aW7-h2eA-0_ih2Jk9i1pE3oETkE4iS3gOaL2ejpGglS8-y0qHwR2U6iX-D&qr_code_text=Donasi+Panti+Asuhan+Lentera+Harapan&image_format=PNG&image_width=500&background_color=%23ffffff&foreground_color=%23000000" class="mx-auto w-64 h-64 rounded-md object-cover" alt="QRIS Code Donasi Panti Asuhan Lentera Harapan" />
+                        <p class="mt-4 font-semibold text-gray-800">a/n YAYASAN LENTERA HARAPAN</p>
+                    </div>
+                     <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Transfer Bank</h3>
+                            <p class="text-gray-600 mt-2">Anda juga dapat berdonasi melalui transfer ke rekening resmi kami:</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg border">
+                            <p class="text-sm font-bold text-sky-600">BANK MANDIRI</p>
+                            <p class="text-2xl font-mono font-semibold text-gray-800 mt-1">123 456 789 0123</p>
+                            <p class="mt-1 text-gray-600">a/n YAYASAN LENTERA HARAPAN</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-lg shadow-lg border">
+                            <p class="text-sm font-bold text-sky-600">BANK BCA</p>
+                            <p class="text-2xl font-mono font-semibold text-gray-800 mt-1">987 654 321 0987</p>
+                            <p class="mt-1 text-gray-600">a/n YAYASAN LENTERA HARAPAN</p>
+                        </div>
+                        <div class="bg-yellow-100/60 p-4 rounded-lg text-yellow-800">
+                            <p>Setelah berdonasi, mohon konfirmasi melalui WhatsApp ke <strong class="font-bold">0812-3456-7890</strong> agar kami dapat mencatat dan mengirimkan laporan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="galeri" class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-serif-display text-4xl md:text-5xl font-bold mb-4 text-gray-900" data-aos="fade-up">Momen Keceriaan Kami</h2>
+                <p class="text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Intip kehangatan dan kebersamaan di rumah kami.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/momen1.png" class="col-span-2 row-span-2 rounded-lg shadow-md object-cover w-full h-full" alt="Galeri panti asuhan" />
+                    <img src="images/momen2.png" class="rounded-lg shadow-md object-cover w-full h-full aspect-square" alt="Galeri panti asuhan" />
+                    <img src="images/momen3.png" class="rounded-lg shadow-md object-cover w-full h-full aspect-square" alt="Galeri panti asuhan" />
+                    <img src="images/momen4.png" class="rounded-lg shadow-md object-cover w-full h-full aspect-square" alt="Galeri panti asuhan" />
+                    <img src="images/momen5.png" class="rounded-lg shadow-md object-cover w-full h-full aspect-square" alt="Galeri panti asuhan" />
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="kontak" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                     <h2 class="font-serif-display text-4xl md:text-5xl font-bold text-gray-900">Kunjungi & Hubungi Kami</h2>
+                     <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        Kami sangat senang menerima kunjungan atau pertanyaan dari Anda. Pintu kami selalu terbuka.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-96 rounded-lg shadow-xl overflow-hidden">
+                        <!-- Ganti dengan Peta Lokasi Panti Anda -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666421683416!2d106.8249641750036!3d-6.17539239380972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2addde548142b4!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1701142517657!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-bold text-sky-600">ALAMAT LOKASI</h3>
+                            <p class="text-gray-600">Jl. Kebaikan No. 45, Jakarta Pusat, Indonesia</p>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-sky-600">EMAIL</h3>
+                            <p class="text-gray-600">info@lenteraharapan.org</p>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-sky-600">TELEPON / WHATSAPP</h3>
+                            <p class="text-gray-600">0812-3456-7890</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 bg-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
+                <div>
+                    <h3 class="font-serif-display text-xl font-black text-gray-800 mb-4">Lentera<span class="text-sky-600">Harapan</span></h3>
+                    <p class="text-gray-600">Memberikan rumah dan harapan untuk masa depan anak-anak Indonesia.</p>
+                </div>
+                 <div>
+                    <h3 class="font-semibold text-gray-800 mb-4">Navigasi</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#tentang" class="hover:text-sky-600">Tentang Kami</a></li>
+                        <li><a href="#program" class="hover:text-sky-600">Program</a></li>
+                        <li><a href="#donasi" class="hover:text-sky-600">Donasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-4">Hubungi Kami</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>info@lenteraharapan.org</li>
+                        <li>0812-3456-7890</li>
+                        <li>Jl. Kebaikan No. 45, Jakarta</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Panti Asuhan Lentera Harapan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tombol WhatsApp Mengambang -->
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Panti%20Asuhan%20Lentera%20Harapan." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl hover:bg-green-600 transition-all duration-300 transform hover:scale-110 z-50">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
+    </a>
+
+    <!-- AOS (Animate On Scroll) Initializer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Durasi animasi dalam milidetik
+            once: true,    // Animasi hanya berjalan sekali saat scroll
+        });
+    </script>
+</body>
+</html>
