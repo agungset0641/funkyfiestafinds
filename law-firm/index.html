@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lex & Co. - Firma Hukum Profesional & Terpercaya</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Lora for headings, Inter for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA; /* Off-white */
+        }
+        .font-serif-display {
+            font-family: 'Lora', serif;
+        }
+        /* Custom Colors */
+        .text-navy { color: #1D2D50; }
+        .bg-navy { background-color: #1D2D50; }
+        .border-navy { border-color: #1D2D50; }
+        .text-bronze { color: #CD7F32; }
+        .bg-bronze { background-color: #CD7F32; }
+    </style>
+</head>
+<body class="text-slate-700">
+    
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto flex justify-between items-center p-5 px-6">
+            <a href="#" class="text-2xl font-serif-display font-bold text-navy">LEX & CO.</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#tentang" class="font-semibold text-slate-600 hover:text-navy transition-colors">Tentang Kami</a>
+                <a href="#layanan" class="font-semibold text-slate-600 hover:text-navy transition-colors">Area Praktik</a>
+                <a href="#tim" class="font-semibold text-slate-600 hover:text-navy transition-colors">Tim Kami</a>
+                <a href="#kontak" class="bg-navy text-white font-bold py-2 px-5 rounded-md hover:bg-slate-700 transition-all duration-300">
+                    Jadwalkan Konsultasi
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-white pt-32 pb-20">
+            <div class="container mx-auto px-6 text-center">
+                <div data-aos="fade-up">
+                    <span class="font-bold text-bronze tracking-widest">KEADILAN. INTEGRITAS. KEUNGGULAN.</span>
+                    <h1 class="font-serif-display text-4xl lg:text-6xl font-bold text-navy leading-tight my-6 max-w-4xl mx-auto">
+                        Memberikan Solusi Hukum yang Strategis dan Efektif
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
+                        Lex & Co. adalah firma hukum yang berdedikasi untuk melindungi hak dan kepentingan Anda dengan keahlian hukum yang mendalam dan pendekatan yang personal.
+                    </p>
+                    <a href="#layanan" class="bg-bronze text-white font-bold py-3 px-10 rounded-md text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105">
+                        Jelajahi Area Praktik Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="tentang" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <!-- Ganti dengan foto kantor atau tim diskusi -->
+                        <img src="images/office.png" class="rounded-lg shadow-xl object-cover" alt="Suasana kantor hukum Lex & Co.">
+                    </div>
+                    <div data-aos="fade-left">
+                        <h2 class="font-serif-display text-3xl md:text-4xl font-bold text-navy mb-6">Mitra Hukum Terpercaya Anda</h2>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Didirikan atas dasar komitmen terhadap keunggulan, Lex & Co. telah berkembang menjadi salah satu firma hukum yang paling dihormati. Kami menggabungkan pengetahuan hukum tradisional dengan pendekatan modern untuk mengatasi tantangan hukum paling kompleks yang dihadapi klien kami, baik individu maupun korporasi.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed">
+                            Setiap kasus kami tangani dengan strategi yang dirancang khusus, memastikan bahwa setiap langkah yang kami ambil selaras dengan tujuan akhir Anda. Kepercayaan Anda adalah aset terbesar kami.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Area Praktik) -->
+        <section id="layanan" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="font-serif-display text-3xl md:text-4xl font-bold text-navy">Area Praktik Kami</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-slate-600">Kami menyediakan layanan hukum komprehensif di berbagai bidang utama.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Ganti ikon, judul, dan deskripsi sesuai layanan -->
+                    <div class="border border-slate-200 rounded-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-xl font-bold text-navy mb-2">Hukum Korporasi</h3>
+                        <p class="text-slate-500">Pendirian perusahaan, merger & akuisisi, kepatuhan, dan perjanjian komersial.</p>
+                    </div>
+                    <div class="border border-slate-200 rounded-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-xl font-bold text-navy mb-2">Sengketa & Litigasi</h3>
+                        <p class="text-slate-500">Mewakili klien dalam sengketa perdata, pidana, dan komersial di pengadilan.</p>
+                    </div>
+                    <div class="border border-slate-200 rounded-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-xl font-bold text-navy mb-2">Properti & Real Estate</h3>
+                        <p class="text-slate-500">Transaksi jual beli, sewa-menyewa, dan penyelesaian sengketa tanah.</p>
+                    </div>
+                     <div class="border border-slate-200 rounded-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-xl font-bold text-navy mb-2">Ketenagakerjaan</h3>
+                        <p class="text-slate-500">Perjanjian kerja, perselisihan industrial, dan peraturan perusahaan.</p>
+                    </div>
+                     <div class="border border-slate-200 rounded-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-xl font-bold text-navy mb-2">Kekayaan Intelektual</h3>
+                        <p class="text-slate-500">Pendaftaran dan perlindungan merek dagang, hak cipta, dan paten.</p>
+                    </div>
+                     <div class="border border-slate-200 rounded-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-xl font-bold text-navy mb-2">Hukum Keluarga</h3>
+                        <p class="text-slate-500">Perkawinan, perceraian, waris, dan hak asuh anak dengan pendekatan yang empatik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section id="tim" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="font-serif-display text-3xl md:text-4xl font-bold text-navy">Pengacara & Konsultan Ahli Kami</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-slate-600">Dipimpin oleh para profesional berpengalaman dengan rekam jejak yang terbukti.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Profile Card 1 -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/pengacara-1.png" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4" alt="Foto John Doe, S.H., M.H.">
+                        <h3 class="text-xl font-bold text-navy">Bambang Prasetyo, S.H., M.H.</h3>
+                        <p class="text-bronze font-medium">Managing Partner</p>
+                    </div>
+                    <!-- Profile Card 2 -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/pengacara-2.png" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4" alt="Foto Jane Smith, S.H.">
+                        <h3 class="text-xl font-bold text-navy">Adrian Hadinata, S.H.</h3>
+                        <p class="text-bronze font-medium">Senior Partner - Litigasi</p>
+                    </div>
+                    <!-- Profile Card 3 -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/pengacara-3.png" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4" alt="Foto Michael Chen, S.H.">
+                        <h3 class="text-xl font-bold text-navy">Reza Nugraha, S.H.</h3>
+                        <p class="text-bronze font-medium">Partner - Korporasi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/CTA Section -->
+        <section id="kontak" class="bg-navy py-20 md:py-24">
+            <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-serif-display font-bold text-white">Siap Mendiskusikan Kasus Anda?</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-slate-300 text-lg mb-8">
+                    Jadwalkan konsultasi awal tanpa komitmen dengan salah satu pengacara kami. Kami di sini untuk mendengarkan dan memberikan panduan hukum yang Anda butuhkan.
+                </p>
+                <a href="mailto:konsultasi@lexco.id" class="inline-block bg-bronze text-white font-bold py-3 px-10 rounded-md text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105">
+                    Hubungi Kami Sekarang
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-left">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-serif-display font-bold text-navy mb-4">LEX & CO.</h3>
+                    <p class="text-slate-500 pr-8">Memberikan solusi hukum strategis dengan integritas dan keunggulan profesional.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-navy mb-4">Informasi Kontak</h3>
+                    <ul class="space-y-3 text-slate-500">
+                        <li>konsultasi@lexco.id</li>
+                        <li>(021) 123-4567</li>
+                        <li>Gedung SCBD, Jakarta Selatan, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-200 pt-8 text-center text-slate-500">
+                <p>&copy; 2025 Lex & Co. Law Firm. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS (Animate On Scroll) Initializer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+    </script>
+</body>
+</html>
